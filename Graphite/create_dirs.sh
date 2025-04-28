@@ -4,6 +4,9 @@
 ecut=40.0
 nk=4
 ntasks=12
+
+for dim_plane in $(cat lats_vert.txt); do 
+    for dim_vert in 
 for conv_thr in "1.0d-8" "1.0d-12"; do
     bash create_dir.sh $ecut $nk $conv_thr
 done

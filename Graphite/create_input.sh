@@ -6,12 +6,12 @@ ecut=40.0
 nk=4
 conv_thr="1.0d-8"
 
-lat_plane=$1
-lat_vert=$2
+dim_plane=$1
+dim_vert=$2
 
 potential_file="$(pwd)/scripts/C.pbe-rrkjus.UPF"
 
-dir_name="C_plane${lat_plane}_vert${lat_vert}"
+dir_name="C_plane${dim_plane}_vert${dim_vert}"
 input_script="$dir_name/C.scf.in"
 
 echo "Creating PW input script and copying PW potenial file in $dir_name"
@@ -29,8 +29,8 @@ cat > "$input_script" <<EOL
  /
  &system    
     ibrav=  4, 
-    celldm(1)= ${lat_plane}, 
-    celldm(3)= ${lat_vert}, 
+    celldm(1)= ${dim_plane}, 
+    celldm(3)= ${dim_vert}, 
     nat=  4, 
     ntyp= 1,
     ecutwfc= 40.0

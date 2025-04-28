@@ -1,15 +1,15 @@
 #!/bin/bash
 
-lat_plane=$1
-lat_vert=$2
+dim_plane=$1
+dim_vert=$2
 
-dir_name="C_plane${lat_plane}_vert${lat_vert}"
+dir_name="C_plane${dim_plane}_vert${dim_vert}"
 slurm_script="$dir_name/quantum.qsub"
 echo "Creating SLURM script in $dir_name"
 
 cat > "$slurm_script" <<EOL
 #!/bin/bash
-#SBATCH -J QE_C_plane${lat_plane}_vert${lat_vert}
+#SBATCH -J QE_C_plane${dim_plane}_vert${dim_vert}
 #SBATCH -o %j.out
 #SBATCH -p parallel
 #SBATCH -N 1
