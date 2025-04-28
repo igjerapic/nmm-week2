@@ -1,0 +1,12 @@
+ASSIGNMENT 1
+- see that the optimum lattice const is 10.4 Bohr, which is 5.3486 A
+- Need to check if this is the lattice const of Si in lit
+
+ASSIGNMENT 2
+
+ASSIGNMENT 4: Graphite
+TODO: change create_submit.sh 
+- Have in principle two dimensions that should be optimized
+- Values given are pretty good. Can take several points in steps 0.1 away
+- Should provide a "hit map" 
+- If problems converging, can try to first optimize only cdim(1)

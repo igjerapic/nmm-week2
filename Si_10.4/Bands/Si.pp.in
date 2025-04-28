@@ -1,0 +1,5 @@
+&BANDS
+  prefix='Si',
+  outdir='./',
+  filband='Si.dat'
+/

@@ -1,0 +1,6 @@
+16*.out
+*.xml
+**/Si.*.out
+**/Si.wfc*
+**/Si.save
+Graphite
