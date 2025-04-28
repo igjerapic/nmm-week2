@@ -1,5 +1,5 @@
 &BANDS
-  prefix='Si',
+  prefix='C',
   outdir='./',
-  filband='Si.dat'
+  filband='C.dat'
 /

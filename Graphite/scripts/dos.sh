@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -J Si_DOS
+#SBATCH -J C_DOS
 #SBATCH -o %j.out
 #SBATCH -p parallel
 #SBATCH -N 1
@@ -7,4 +7,4 @@
 #SBATCH -t 00:30:00
 
 module load QuantumESPRESSO/7.1-foss-2022a
-srun dos.x < Si.dos.in > Si.dos.out
+srun dos.x < C.dos.in > C.dos.out

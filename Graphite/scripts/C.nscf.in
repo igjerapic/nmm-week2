@@ -1,16 +1,19 @@
  &control
     calculation = 'nscf'
     restart_mode='from_scratch',
-    prefix='Si',
+    prefix='C',
     pseudo_dir = './'
     outdir = './'
     verbosity = 'high'
  /
  &system
-    ibrav=  2, celldm(1) =10.261213, nat=  2, ntyp= 1,
-    ecutwfc =40.0
-    nbnd =18
-    occupations = 'tetrahedra'
+    ibrav=  4, 
+    celldm(1)= ${dim_plane}, 
+    celldm(3)= ${dim_vert}, 
+    nat=  4, 
+    ntyp= 1,
+    ecutwfc= 40.0
+    vdw_corr= 'DF-D3'
  /
  &electrons
     mixing_mode = 'plain'
@@ -19,9 +22,11 @@
  /
 
 ATOMIC_SPECIES
- Si  28.086  Si.pbe-nl-rrkjus_psl.1.0.0.UPF
+   C  12.011  C.pbe-rrkjus.UPF
 ATOMIC_POSITIONS (alat)
- Si 0.00 0.00 0.00
- Si 0.25 0.25 0.25
+   C      0.000 0.000 0.000
+   C      0.000 0.577 0.000
+   C      0.000 0.000 1.363
+   C      0.500 0.288 1.363 
 K_POINTS {automatic}
-  12 12 12 1 1 1
+   12 12 12 1 1 1
