@@ -1,0 +1,9 @@
+create*.sh
+*.txt
+*.sh
+scripts
+scripts/*
+**/16*.out
+**/C.save
+**/C.xml
+**/C.pbe*
