@@ -13,10 +13,11 @@ potential_file="$(pwd)/scripts/C.pbe-rrkjus.UPF"
 
 dir_name="C_plane${lat_plane}_vert${lat_vert}"
 input_script="$dir_name/C.scf.in"
-cp $potential_file $dir_name/C.pbe-rrkjus.UPF
+
 echo "Creating PW input script and copying PW potenial file in $dir_name"
 
 
+cp $potential_file $dir_name/C.pbe-rrkjus.UPF
 
 cat > "$input_script" <<EOL
  &control
