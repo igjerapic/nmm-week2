@@ -19,11 +19,6 @@ plt.rcParams['axes.prop_cycle'] = plt.cycler(cycler(color = [
                                     '#AA4499',
                                     '#DDDDDD'
                                 ]))
-
-def plot_convergence(file):
-    etots = np.loadtxt("si.etot_conv_1d-12").T
-    iteratiosn= np.arange()
-
 def main():
 
     dims_plane = np.loadtxt("dims_plane.txt").T
