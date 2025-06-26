@@ -30,7 +30,7 @@ def main():
     plt.xticks(lattice_const, [f"{lat:.2f}" for lat in lattice_const])
     plt.tight_layout()
     plt.savefig("report/figs/ass1_etot-vs-lat_const.png", dpi=300)
-    plt.show()
+    #plt.show()
 
 if __name__ == "__main__":
     main()
