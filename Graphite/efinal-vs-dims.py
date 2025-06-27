@@ -23,15 +23,16 @@ def main():
             efinal = float(os.popen(cmd).read()[:-1]) # last character is new line '\n'
             efinals[i,j] = efinal
 
-    fig, ax= plt.subplots(figsize=(6,6))
+    fig, ax= plt.subplots(figsize=(5,5))
 
     c = ax.pcolormesh(DIMS_PLANE, DIMS_VERT, efinals, cmap='RdBu', vmin=efinals.min(), vmax=efinals.max())
-    fig.colorbar(c, ax=ax)
+    fig.colorbar(c, ax=ax, label = ("Engery (Ry)"))
     ax.set_yticks(dims_vert)
     ax.set_xticks(dims_plane)
     ax.set_xlabel("a (Bohr)")
     ax.set_ylabel("c/a")
-    plt.tight_layout
+    plt.tight_layout()
+    plt.savefig("../report/figs/ass4_energies.png", dpi=300)
     plt.show()
 if __name__ == "__main__":
     main()

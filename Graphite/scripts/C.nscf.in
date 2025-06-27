@@ -13,7 +13,7 @@
     nat=  4, 
     ntyp= 1,
     ecutwfc= 40.0
-    vdw_corr= 'DF-D3'
+    vdw_corr= 'DFT-D3'
  /
  &electrons
     mixing_mode = 'plain'
